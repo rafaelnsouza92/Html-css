@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias
+    </title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir essas imagens em dispositivos diferentes ou aumente e diminua sua tela</p>
+
+    <picture>
+        <!-- caso nao coloque type nao funciona
+            sempre colocar uma nova source acima
+            sempre colocar 50px a mais da imagem testar sobre antes
+         -->
+         <source media="(max-width:700px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="Imagem flexivel">
+    </picture>
+
+    <h2>Vamos comecar a mecher com audios</h2>
+
+    <!--<audio src="midias/Death-Grips.mp3" controls autoplay></audio> -->
+    <!-- Formatos aceitos mp3 ogg wav -->
+
+    <audio preload="auto" autoplay controls>
+        <source src="midias/Death-Grips.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>Trabalhando com videos</h2>
+    <video src="midias/meu-video.mp4" width="600px" controls></video>
+
+    <h2>De outra forma</h2>
+    <video controls width="700px
+    ">
+        <source src="midias/meu-video.webm" type="video/webm">
+    </video>
+
+    <h2>Videos externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QY_hoWcC3-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(48, 45, 45);
+        }
+        header{
+            background-color: white;
+            padding: 5px;
+        }
+        nav{
+            background-color: rgb(240, 226, 163);
+            box-shadow: 1px 1px 1px black;
+        }
+        nav >a{
+            color: rgb(253, 90, 61);
+            margin: 30px;
+            text-decoration: none;
+        }
+
+        nav>a:hover{
+            background-color: blue;
+            color: chocolate;
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 30px;
+            margin: 10px;
+        }
+        section{
+            background-color: antiquewhite;
+            height: 200px;
+            text-align: center;
+            border-radius: 30px;
+        }
+        footer{
+            background-color: blueviolet;
+            padding: 1px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header cabecalho
+         main conteudo
+        footer rodape
+        nav menu
+        section para separar conteudos 
+    
+    sao divs porem com semantica com isso facilita os mecanismos de buscas achar o site-->
+    <header>
+    <h1> Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    </header>
+    <main>
+        <h2>Subtitulo</h2>
+        <section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dignissimos tempora atque at assumenda doloremque fugit sit laudantium sed illo iure eos, quae error quod? Eaque perspiciatis vel nam officia.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim mesmo</p>
+    </footer>
+</body>
+</html>

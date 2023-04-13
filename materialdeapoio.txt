@@ -1,0 +1,9 @@
+Material para apoio
+
+Font family - https://www.w3schools.com/cssref/css_websafe_fonts.php
+
+Paleta de cores - https://color.adobe.com/pt/explore - https://paletton.com/#uid=70f0u0kvwM0jtPRpmN-KrBjJgpY
+
+Google Fonts - https://fonts.google.com/
+
+Dafont - https://www.dafont.com/pt/
