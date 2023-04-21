@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+            margin: auto;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.cnome{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th  scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+
+        <tr>
+            <td>Rafael</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Tec Enfermagem</td>
+        </tr>
+
+        <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>14</td>
+            <td>Jogador Fut</td>
+        </tr>
+
+        <tr>
+            <td>Theo</td>
+            <td>M</td>
+            <td>2</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Perola</td>
+            <td>F</td>
+            <td>0</td>
+            <td>Nascimento</td>
+        </tr>
+    </table>
+</body>
+</html>
