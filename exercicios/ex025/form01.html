@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        name e id sao obrigatorios em formularios
+
+        o name e o identificador mais utilizado para o html e php pegar o que esta entrando
+
+        id e o identificador mais utilizado para outras linguagens como javascript asp e java
+
+        utilizar o label para identificar qual o imput text esta relacionado
+
+        Com o label caso o cliente clique na palavra relacionada o input ja entra no campo 
+        
+    -->
+    <h1>Meu primeiro Formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
