@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Exemplo de Formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <!-- Tipo de input radio colocar o mesmo name para definir qual sera selecionado e der para selecionar apenas um 
+        quando quer deixar algum marcado dentro do imput deixar o checked
+        no imput tipo radio necessario value para ser enviado-->
+        
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sxmasc" value="M" checked><label for="sxmasc">Masculino</label>
+            <input type="radio" name="sexo" id="sxfem" value="F"><label for="sxfem">Feminino </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquet</label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Volêi</label>
+            <input type="checkbox" name="escorrida" id="iescorrida"> <label for="iescorrida">Corrida</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
