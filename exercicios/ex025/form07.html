@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <!-- Tag OPTGROUP para separar options dentro da caixa
+    Lembrar sempre metodo POST quando tiver Fotos e Textarea-->
+    <h1>Tipos de Formularios</h1>
+    <form action="cadastro.php" method="post">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="Separar1">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="PR">PR</option>
+            </optgroup>
+
+            <optgroup label="Separar2">
+                <option value="RR">RR</option>
+                <option value="DF">DF</option>
+                <option value="CE">CE</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                    <option value="ENF">Enfermeiro</option>
+                    <option value="MED">Medico</option>
+                </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
