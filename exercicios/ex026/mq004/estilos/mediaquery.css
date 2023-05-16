@@ -1,1 +1,80 @@
 @charset "UTF-8";
+
+/*
+typical devices breakpoints
+pequenas telas ate 600px
+celular: 600px ate 768px
+tablet:v 768px ate 992px
+desktop: 992px ate 1200px
+grandes telas: acima de 1200px
+
+*/
+/*
+
+
+como o site foi feito para dispositivos moveis nao precisa dessas definicoes
+
+
+@media screen and (max-width: 600px){
+
+}
+
+@media screen and (min-width: 600px)and (max-width: 768px){
+    
+}
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); /* Desnecessario */
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressao{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+}
+/* ATENCAO MEDIDAS APENAS PARA PODER SER VISUALIZADAS NO TESTE DO PROJETO MEDIDAS CORRETAS NO COMECO DO CODIGO */
+@media screen and (min-width: 600px) and (max-width:800px) {
+    body{
+        background: url(../imagens/back-tablet.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+                img#phone{display: none;}
+                img#tablet{display: block;}
+                img#impressao{display: none;}
+                img#pc{display: none;}
+                img#tv{display: none;}
+                        }
+
+@media screen and (min-width:801px) and (max-width:1200px){
+    body{
+        background: url(../imagens/back-pc.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressao{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+@media screen and (min-width:1201px) {
+    body{
+        background: url(../imagens/back-tv.jpg);
+        background-position: center center;
+        background-size: cover;
+    }   
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressao{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
